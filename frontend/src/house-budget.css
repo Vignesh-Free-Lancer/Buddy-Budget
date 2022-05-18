@@ -1,0 +1,897 @@
+/************* Landing Page Start ***************/
+
+.landing-page-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../src/images/landing-image.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.landing-page-container .intro-text {
+  text-align: center;
+}
+
+.landing-page-container .intro-text h1 {
+  font-size: 46px;
+}
+
+.landing-page-container .intro-text p {
+  font-size: 30px;
+}
+
+.landing-page-container .button-container {
+  margin-top: 50px;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.landing-page-container .button-container button {
+  width: 200px;
+  height: 50px;
+}
+
+/************* Landing Page End *****************/
+
+/************* Header Start *********************/
+
+.budget-header {
+  background-color: #1abc9c !important;
+}
+
+.budget-header .header-title a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.budget-header .navbar-nav .nav-link {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.budget-header .navbar-nav .nav-link:hover {
+  font-weight: 500;
+}
+
+.budget-header .navbar-nav .header-profile-icon img {
+  border-radius: 50%;
+  width: 30px;
+  height: 35px;
+}
+
+.budget-header .nav-item.dropdown a.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.budget-header .nav-item.dropdown .dropdown-menu {
+  padding: 0;
+}
+
+.budget-header .nav-item.dropdown .dropdown-menu .dropdown-divider {
+  margin: 0;
+}
+
+.budget-header .nav-item.dropdown .dropdown-menu .dropdown-item {
+  padding: 10px;
+}
+
+.budget-header .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: #1abc9c;
+  opacity: 0.7;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/************* Header End ***********************/
+
+/************* Main Screen Start ****************/
+
+.main-screen {
+  margin: 30px auto;
+}
+
+.main-screen .page-title-section h2 {
+  padding-bottom: 12px;
+  font-size: 26px;
+  position: relative;
+}
+
+.main-screen .page-title-section h2:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(to right, lightblue, lightgreen);
+  position: absolute;
+  bottom: 0;
+}
+
+.main-screen .page-body-section select {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, blue 50%),
+    linear-gradient(135deg, blue 50%, transparent 50%),
+    linear-gradient(to right, skyblue, skyblue);
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), 100% 0;
+  background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
+  background-repeat: no-repeat;
+}
+
+.main-screen .page-body-section select:focus,
+.main-screen .page-body-section input:focus,
+.main-screen .page-body-section button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/************* Main Screen End ******************/
+
+/************* Dashboard Start ******************/
+
+.dashboard-page {
+  min-height: 65vh;
+}
+
+.dashboard-page .dashboard-section {
+  margin: 30px 0 50px;
+}
+
+.dashboard-page .dashboard-section a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.dashboard-page .dashboard-section .user.border-left-primary {
+  border-left: 0.25rem solid #4e73df;
+}
+
+.dashboard-page .dashboard-section .salary.border-left-primary {
+  border-left: 0.25rem solid #0ea619;
+}
+
+.dashboard-page .dashboard-section .expenses.border-left-primary {
+  border-left: 0.25rem solid #eb0a1f;
+}
+
+.dashboard-page .dashboard-section .no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.dashboard-page .dashboard-section .no-gutters .col {
+  padding: 0;
+}
+
+.dashboard-page .dashboard-section .text-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: initial;
+}
+
+.dashboard-page .dashboard-section .text-gray-800 {
+  color: #5a5c69 !important;
+}
+
+.dashboard-page .dashboard-section .text-gray-800 span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.dashboard-page .dashboard-section .user .text-gray-800 .bg-info {
+  background-color: #4e73df !important;
+}
+
+.dashboard-page .dashboard-section .salary .text-gray-800 .bg-info {
+  background-color: #0ea619 !important;
+}
+
+.dashboard-page .dashboard-section .expenses .text-gray-800 .bg-info {
+  background-color: #eb0a1f !important;
+}
+
+.dashboard-page .dashboard-section .dashboard-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.dashboard-page .dashboard-section .user .dashboard-icon {
+  background: url("../src/images/user_image.png") no-repeat right center;
+  background-size: contain;
+}
+
+.dashboard-page .dashboard-section .salary .dashboard-icon {
+  background: url("../src/images/salary_image.png") no-repeat right center;
+  background-size: contain;
+}
+
+.dashboard-page .dashboard-section .expenses .dashboard-icon {
+  background: url("../src/images/expenses_image.png") no-repeat right center;
+  background-size: contain;
+}
+
+/************* Dashboard End ********************/
+
+/************* Login & Reset Form Start *****************/
+
+.login-section,
+.reset-password-section {
+  margin: 30px;
+  min-height: 65vh;
+}
+
+.login-section .login-form,
+.reset-password-section .reset-form {
+  width: 45%;
+  margin: 0 auto;
+}
+
+/************* Login & Reset Form End ******************/
+
+/************* Navigation-Group Start ******************/
+
+.form-nav-button-group {
+  margin: 0;
+  padding: 0 0 30px;
+  text-align: right;
+  display: block;
+}
+
+.form-nav-button-group button {
+  opacity: 0.7;
+}
+
+.form-nav-button-group button a {
+  color: inherit;
+}
+
+/************* Navigation-Group End ********************/
+
+/************* Listview Start **************************/
+
+.listview-section {
+  margin: 20px 0 0;
+  min-height: 68vh;
+  position: relative;
+}
+
+.listview-section .listview-no-records {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 100%;
+  position: absolute;
+}
+
+.listview-section .listview-no-records p {
+  font-size: 42px;
+  font-weight: 400;
+}
+
+.listview-section .list-group .list-group-item {
+  padding: 12px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.listview-section .list-group .list-group-item .form-check {
+  margin: 0;
+  padding: 0;
+}
+
+.listview-section .list-group .list-group-item .form-check input {
+  margin-left: 0;
+  cursor: pointer;
+}
+
+.listview-section .list-group .list-group-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/************* Listview End ********************/
+
+/************* Table Start *********************/
+
+.table.custom-table.expenses-table {
+  width: 100%;
+}
+
+.table.custom-table.expenses-table thead tr th:nth-child(1) {
+  width: 20%;
+}
+
+.table.custom-table.expenses-table thead tr th:nth-child(2) {
+  width: 10%;
+}
+
+.table.custom-table.expenses-table thead tr th:nth-child(3) {
+  width: 10%;
+}
+
+.table.custom-table.expenses-table thead tr th:nth-child(4) {
+  width: 12%;
+}
+
+.table.custom-table.expenses-table thead tr th:nth-child(5) {
+  width: 10%;
+}
+
+.table.custom-table.expenses-table thead tr th:nth-child(6) {
+  width: 23%;
+}
+
+.table.custom-table.expenses-table thead tr th:nth-child(7) {
+  width: 15%;
+}
+
+.table.custom-table th {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.table.custom-table > :not(:first-child) {
+  border-top: 2px solid #57647e;
+}
+
+.table.custom-table tbody tr td:nth-child(7) {
+  text-align: center;
+}
+
+.table.custom-table tbody tr td .edit-icon,
+.table.custom-table tbody tr td .delete-icon {
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+
+.table.custom-table.expenses-table tbody tr .table-no-records {
+  padding: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/************* Table End ***********************/
+
+/************* Pagination Start ****************/
+
+.page-pagination {
+  margin: 30px 0;
+}
+
+.page-pagination .row {
+  align-items: center;
+}
+
+.page-pagination .total-count {
+  float: left;
+}
+
+.page-pagination .page-size {
+  float: right;
+}
+
+.page-pagination .total-count,
+.page-pagination .page-size {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.page-pagination .total-count span,
+.page-pagination .page-size span {
+  color: #57647e;
+}
+
+.page-pagination nav ul.pagination {
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+/************* Pagination End ******************/
+
+/************* User Profile Start **************/
+
+.register-section,
+.my-profile-section {
+  margin: 30px 0 50px;
+}
+
+.register-section .register-form,
+.my-profile-section .user-form {
+  width: 60%;
+}
+
+.register-section .register-form .user-status input,
+.my-profile-section .user-form .user-status input {
+  width: 50px;
+  height: 25px;
+}
+
+.register-section .register-form .user-status input:checked,
+.my-profile-section .user-form .user-status input:checked {
+  background-color: green;
+  border-color: green;
+}
+
+.register-section .user-profile-pic h6,
+.my-profile-section .user-profile-pic h6 {
+  margin-bottom: 15px;
+  padding-bottom: 12px;
+  font-size: 26px;
+  position: relative;
+}
+
+.register-section .user-profile-pic h6:after,
+.my-profile-section .user-profile-pic h6:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(to right, #ccc, rgb(160, 199, 160));
+  position: absolute;
+  bottom: 0;
+}
+
+.register-section .user-profile-pic img,
+.my-profile-section .user-profile-pic img {
+  width: 100%;
+  height: 250px;
+}
+
+.register-section .user-profile-pic .profile-button .default-img,
+.register-section .user-profile-pic .profile-button .upload-img {
+  border: 1px solid #ccc;
+}
+
+.register-section .user-profile-pic .profile-button .default-img:hover {
+  background: #dee2e6;
+}
+
+.register-section .user-profile-pic .profile-button .upload-img:hover {
+  background: #0dcaf0;
+}
+
+.register-section .user-profile-pic .profile-button .default-img:focus,
+.register-section .user-profile-pic .profile-button .upload-img:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.register-section .user-profile-pic .profile-error-message,
+.my-profile-section .user-profile-pic .profile-error-message {
+  display: block;
+  color: #dc3545;
+  font-size: 14px;
+}
+
+.register-section .user-profile-pic .upload-status,
+.my-profile-section .user-profile-pic .upload-status {
+  display: block;
+  color: green;
+  font-weight: 500;
+}
+
+.register-section .register-form .image-status,
+.my-profile-section .user-form .image-status {
+  display: block;
+  color: #dc3545;
+  font-weight: 500;
+}
+
+.register-section .register-form .login-link {
+  text-align: right;
+}
+
+/************* User Profile End ****************/
+
+/************* Salary Information Start ********/
+
+.salary-section {
+  margin: 30px 0;
+  min-height: 65vh;
+  position: relative;
+}
+
+.salary-section .sub-title {
+  padding-bottom: 10px;
+  font-size: 16px;
+  position: relative;
+}
+
+.salary-section .sub-title:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 11.3%;
+  background: linear-gradient(to right, rgb(159, 182, 190), rgb(124, 123, 180));
+  position: absolute;
+  bottom: 0;
+}
+
+.salary-section .total-value-div label,
+.salary-section .total-value-div span {
+  font-weight: 500;
+}
+
+.salary-section .total-value-div.total-cr span {
+  padding: 0 12px;
+  color: green;
+  float: right;
+}
+
+.salary-section .total-value-div.total-dr span {
+  padding: 0 12px;
+  color: #dc3545;
+  float: right;
+}
+
+/************* Salary Information End **********/
+
+/************* Expense Details Start ***********/
+
+.expenses-section {
+  margin: 30px 0;
+  min-height: 65vh;
+  position: relative;
+}
+
+.expenses-section h6 {
+  padding: 0 0 10px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: initial;
+  position: relative;
+}
+
+.expenses-section h6:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(to right, lightblue, lightgreen);
+  position: absolute;
+  bottom: 0;
+}
+
+.expenses-section .expense-content-section,
+.expenses-section .grocessary-content-section {
+  display: block;
+}
+
+.expenses-section .expense-content-section::after,
+.expenses-section .expense-content-section .filter-content::after,
+.expenses-section .grocessary-content-section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.expenses-section .expense-content-section button,
+.expenses-section .grocessary-content-section button {
+  border-radius: 50%;
+  transition: all 0.7s ease-in-out 0s;
+}
+
+.expenses-section .expense-content-section button:hover,
+.expenses-section .grocessary-content-section button:hover {
+  transform: rotate(360deg);
+}
+
+.expenses-section .expense-content-section .filter-expense {
+  width: 5%;
+  float: left;
+}
+
+.expenses-section .expense-content-section .filter-expense button {
+  border: #fd7e14bf;
+  background: #fd7e14bf;
+}
+
+.expenses-section .expense-content-section .filter-expense button:hover {
+  border: #e26905;
+  background: #e26905;
+}
+
+.expenses-section .expense-content-section .filter-content {
+  width: 85%;
+  float: left;
+  display: block;
+}
+
+.expenses-section .expense-content-section .filter-content.show-filter {
+  opacity: 1;
+}
+
+.expenses-section .expense-content-section .filter-content.hide-filter {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.expenses-section .expense-content-section .filter-content .filter-option {
+  width: 30%;
+  float: left;
+}
+
+.expenses-section .expense-content-section .new-expense,
+.expenses-section .grocessary-content-section .new-grocessary {
+  width: 5%;
+  float: right;
+}
+
+.expenses-section .expense-content-section .new-expense button,
+.expenses-section .grocessary-content-section .new-grocessary button {
+  border: #20c997;
+  background: #20c997;
+}
+
+.expenses-section .expense-content-section .filter-content .search-button {
+  border-radius: 5px;
+  transition: none;
+}
+
+.expenses-section .expense-content-section .new-expense button:hover,
+.expenses-section .grocessary-content-section .new-grocessary button:hover {
+  border: #198754;
+  background: #198754;
+}
+
+.expenses-section
+  .expense-content-section
+  .filter-content
+  .search-button:hover {
+  transform: none;
+  border: 1px solid #0686a0;
+  background: #0686a0;
+}
+
+.expenses-section .expense-content-section .new-expense button i,
+.expenses-section .expense-content-section .filter-expense button i,
+.expenses-section .grocessary-content-section .new-grocessary button i,
+.expenses-section .expense-content-section .filter-content .search-button i {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.expenses-section .expense-hints p {
+  margin: 0 0 5px;
+  font-size: 10px;
+  font-weight: 400;
+  color: #d8d8d8;
+  width: 63%;
+}
+
+.expenses-section .expense-hints p span {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/************* Expense Details End *************/
+
+/************* Thanks Page Start ***************/
+
+.thanks-section {
+  min-height: 85vh;
+}
+
+.thanks-section .thanks-content h1,
+.thanks-section .thanks-content h4,
+.thanks-section .thanks-content h6 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #00ffff;
+  text-align: center;
+}
+
+.thanks-section .thanks-content h4 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #708090;
+}
+
+.thanks-section .thanks-content h6 {
+  width: 40%;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 500;
+  color: #57647e;
+}
+
+.thanks-section .thanks-content button {
+  margin: 0 auto;
+  padding: 10px 30px;
+  color: #000000;
+  background: #ffffff;
+  display: block;
+  border-radius: 30px;
+  border: 1px solid #2c3e50;
+}
+
+.thanks-section .thanks-content button:hover {
+  color: #ffffff;
+  background: #2c3e50;
+  border: 1px solid #ffffff;
+}
+
+.thanks-section .thanks-content button:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.thanks-section .thanks-content button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.thanks-section .thanks-content button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: -14px;
+  right: -25px;
+  transition: 0.5s;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.thanks-section .thanks-content button:hover span {
+  padding-right: 25px;
+}
+
+.thanks-section .thanks-content button:hover span:after {
+  opacity: 1;
+  right: -7px;
+  top: -14px;
+  font-size: 40px;
+}
+
+/************* Thanks Page End *****************/
+
+/************* Feedback Page Staet *************/
+
+.feedback-section {
+  min-height: 70vh;
+}
+
+.feedback-section h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #2c3345;
+}
+
+.feedback-section h6 {
+  padding: 0 0 30px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #57647e;
+  position: relative;
+}
+
+.feedback-section h6:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: #d7d8e1;
+  position: absolute;
+  bottom: 0;
+}
+
+.feedback-section .feedback-form {
+  margin: 30px 0;
+  width: 60%;
+}
+
+.feedback-section .feedback-success {
+  margin: 10% 0 10%;
+  text-align: center;
+  font-size: 44px;
+  font-weight: 700;
+  color: #00ffff;
+}
+
+.feedback-section .back-to-page {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.feedback-section .back-to-page a,
+.feedback-section .back-to-page a:hover,
+.feedback-section .back-to-page a:focus {
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+/************* Feedback Page End ****************/
+
+/************* Feedback List Start **************/
+
+.dashboard-page .feedback-list-section {
+  margin: 25% 0 0;
+}
+
+.dashboard-page .feedback-list-section h6 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #57647e;
+}
+
+.dashboard-page .feedback-list-section .feedback-result:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.dashboard-page .feedback-list-section .feedback-result .feedback-result-left {
+  width: 50%;
+  float: left;
+  /* background: linear-gradient(-140deg, #eadedb 0%, #bc70a4 50%, #bfd641 75%); */
+}
+
+.dashboard-page
+  .feedback-list-section
+  .feedback-result
+  .feedback-result-left
+  span {
+  display: block;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.dashboard-page .feedback-list-section .feedback-result .feedback-result-right {
+  width: 50%;
+  float: right;
+  border-left-width: 8px;
+  border-left-style: solid;
+  /* border-image: linear-gradient(to right bottom, #3747da, #45e75a); */
+  border-image: linear-gradient(
+    to right bottom,
+    red,
+    yellow,
+    lime,
+    aqua,
+    blue,
+    magenta,
+    red
+  );
+  border-image-slice: 1;
+}
+
+.dashboard-page
+  .feedback-list-section
+  .feedback-result
+  .feedback-result-right
+  span {
+  display: block;
+  text-align: left;
+  padding-left: 15px;
+}
+
+/************* Feedback List End ****************/

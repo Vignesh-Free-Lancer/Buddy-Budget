@@ -1,0 +1,202 @@
+.reports-section {
+  margin: 30px 0 50px;
+
+  &__custom-reports {
+    .nav {
+      &-tabs {
+        // margin: 0 0 20px;
+        border: none;
+        background: #ffffff;
+        // box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+        margin: 30px auto 50px;
+        display: flex;
+        list-style-type: none;
+        -webkit-padding-start: 0;
+        box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+      }
+
+      &-item {
+        padding: 0;
+        border: none;
+        background: none;
+        box-shadow: none;
+
+        &:hover {
+          background: #dfdfdf6b;
+
+          button {
+            font-weight: 600;
+            color: #607d8b !important;
+          }
+        }
+      }
+
+      &-link {
+        padding: 12px 20px;
+        font-size: 20px;
+        font-weight: 400;
+        color: #607d8b !important;
+        border: none;
+        background: none;
+        box-shadow: none;
+        position: relative;
+
+        &.active {
+          font-weight: 600;
+          background: #f8f9fa;
+          border-bottom: solid 5px #b4b4b4;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    &__filter-content {
+      &__export-message {
+        font-size: 16px;
+        font-weight: 400;
+        color: #dc3545;
+        text-align: right;
+      }
+
+      &__filter-section {
+        .generate-report {
+          margin-top: 32px;
+        }
+
+        .export-reports {
+          text-align: right;
+        }
+
+        .reports-category {
+          &__icon-group {
+            margin-left: 10px;
+
+            button {
+              padding: 1px 7px;
+              background: none;
+              border: 1px solid #dee2e6;
+              position: relative;
+
+              &:hover {
+                background: none;
+                border: 1px solid #dee2e6;
+              }
+            }
+          }
+
+          &__table {
+            &__icon {
+              &:before {
+                content: "";
+                display: block;
+                background: url("../../images/table-icon.png") no-repeat;
+                background-size: cover;
+                width: 35px;
+                height: 35px;
+              }
+            }
+          }
+
+          &__graph {
+            &__icon {
+              &:before {
+                content: "";
+                display: block;
+                background: url("../../images/chart-icon.png") no-repeat;
+                background-size: cover;
+                width: 40px;
+                height: 40px;
+              }
+            }
+          }
+
+          &__export {
+            &__icon {
+              &:before {
+                content: "";
+                display: block;
+                background: url("../../images/export-file-icon.png") no-repeat;
+                background-size: cover;
+                width: 35px;
+                height: 35px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .custom-table__collapsable {
+      .footer-row {
+        td {
+          font-weight: 600;
+          text-align: right;
+
+          .footer-content {
+            padding-right: 7px;
+            color: #0d6efd;
+          }
+
+          .footer-values {
+            color: #dc3545;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .reports-section {
+    &__custom-reports {
+      .nav {
+        &-tabs {
+          flex-direction: column;
+
+          li {
+            button {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .tab-content {
+      &__salary-content,
+      &__expense-content,
+      &__grocery-content {
+        &__results {
+          padding: 0 0 30px;
+        }
+      }
+
+      &__filter-content {
+        padding: 0 0 20px;
+
+        &__yearly-section {
+          margin-right: 0 !important;
+        }
+
+        &__filter-section {
+          .generate-report {
+            margin-top: 10px;
+          }
+
+          .export-reports {
+            margin: 20px 0 0;
+            text-align: left;
+          }
+
+          .reports-category {
+            &__icon-group {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

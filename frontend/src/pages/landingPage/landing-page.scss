@@ -1,0 +1,110 @@
+/************* Landing Page Start *****************/
+
+.landing-page-section {
+  background-image: url("../../images/landing-image.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+
+  &__content {
+    text-align: center;
+
+    h1 {
+      margin: 30px 0 40px;
+      font-size: 46px;
+      font-weight: 600;
+      color: #000000;
+    }
+
+    p {
+      margin: 0;
+      font-size: 30px;
+      font-style: italic;
+      color: #57647e;
+    }
+  }
+
+  &__button-container {
+    margin: 50px 0 0;
+    button {
+      width: 15%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .landing-page-section {
+    min-height: 89vh;
+
+    &__content {
+      h1 {
+        font-size: 32px;
+      }
+
+      p {
+        font-size: 28px;
+      }
+    }
+
+    &__button-container {
+      button {
+        width: 20%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .landing-page-section {
+    min-height: 92vh;
+
+    &__content {
+      h1 {
+        font-size: 44px;
+      }
+
+      p {
+        font-size: 32px;
+      }
+    }
+
+    &__button-container {
+      button {
+        width: 20%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1367px) {
+  .landing-page-section {
+    min-height: 90vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .landing-page-section {
+    background-size: cover;
+
+    &__content {
+      h1 {
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 26px;
+      }
+    }
+
+    &__button-container {
+      button {
+        width: 25%;
+      }
+    }
+  }
+}
+
+/************* Landing Page End *******************/

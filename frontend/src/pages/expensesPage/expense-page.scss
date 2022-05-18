@@ -1,0 +1,317 @@
+.expense-info {
+  &__section {
+    margin: 30px 0;
+    position: relative;
+
+    h6 {
+      padding: 0 0 10px;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: initial;
+      position: relative;
+
+      &:after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 100%;
+        background: linear-gradient(to right, lightblue, lightgreen);
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+
+  &__expense-section,
+  &__grocessary-section {
+    display: block;
+
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .btn-add-item {
+      border-radius: 50%;
+      transition: all 0.7s ease-in-out 0s;
+
+      &:hover {
+        transform: rotate(360deg);
+      }
+    }
+
+    &__filter-expense,
+    &__filter-grocery {
+      width: 70%;
+      float: left;
+
+      .filter-button {
+        width: 5%;
+        float: left;
+
+        button {
+          border: #fd7e14bf;
+          background: #fd7e14bf;
+
+          &:hover {
+            border: #e26905;
+            background: #e26905;
+          }
+        }
+      }
+
+      .filter-content {
+        width: 85%;
+        float: left;
+        display: block;
+
+        &.show-filter {
+          opacity: 1;
+        }
+
+        &.hide-filter {
+          opacity: 0;
+          transition: opacity 0.6s ease-in-out;
+        }
+
+        .filter-option {
+          width: 22%;
+          float: left;
+        }
+
+        .search-button {
+          border-radius: 5px;
+          transition: none;
+        }
+      }
+    }
+
+    &__add-grocery,
+    &__add-expense {
+      .new-grocessary,
+      .new-expense {
+        .btn-add-item {
+          border: #20c997;
+          background: #20c997;
+
+          &:hover {
+            border: #198754;
+            background: #198754;
+          }
+        }
+      }
+    }
+
+    &__add-grocery,
+    &__add-expense {
+      text-align: right;
+
+      .add-new-item,
+      .import-item {
+        font-size: 16px;
+        font-weight: 500;
+        color: #ffffff;
+        position: relative;
+      }
+
+      .import-item {
+        margin-right: 10px;
+
+        &:before {
+          font-family: "FontAwesome";
+          content: "\f063";
+          padding-right: 8px;
+          font-size: 16px;
+          font-weight: bold;
+          color: #ffffff;
+        }
+      }
+
+      .add-new-item {
+        border: #20c997;
+        background: #20c997;
+
+        &:before {
+          font-family: "FontAwesome";
+          content: "\f067";
+          padding-right: 8px;
+          font-size: 16px;
+          font-weight: bold;
+          color: #ffffff;
+        }
+
+        &:hover {
+          border: #198754;
+          background: #198754;
+        }
+      }
+    }
+
+    i {
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+
+  &__expense-hints {
+    margin: 0 0 5px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: initial;
+    color: #d8d8d8;
+
+    span {
+      font-size: 13px;
+      font-weight: 700;
+    }
+  }
+
+  // &__expense-table {
+  //   thead {
+  //     tr {
+  //       th {
+  //         &:last-child {
+  //           width: 15%;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
+  // &__grocery-table {
+  // margin-top: 50px;
+
+  // thead {
+  //   tr {
+  //     th {
+  //       &:last-child {
+  //         width: 28%;
+  //       }
+  //     }
+  //   }
+  // }
+  // }
+}
+
+.grocery-modal {
+  &__quantity-section {
+    width: 100%;
+
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    &__qty-value,
+    &__qty-type {
+      width: 50%;
+      float: left;
+    }
+
+    &__qty-type {
+      padding-right: 10px;
+    }
+  }
+
+  &__unit-section {
+    width: 100%;
+
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    &__unit-text {
+      width: 70%;
+      float: left;
+
+      input {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
+
+    &__unit-type {
+      width: 30%;
+      float: right;
+
+      span {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .expense-info {
+    &__expense-hints {
+      width: 70%;
+    }
+
+    &__grocery-category {
+      margin-top: 40px;
+    }
+
+    &__grocery-table {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .expense-info {
+    &__expense-hints {
+      width: 66%;
+    }
+
+    &__grocery-category {
+      margin-top: 40px;
+    }
+
+    &__grocery-table {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .expense-info {
+    &__expense-section,
+    &__grocessary-section {
+      &__add-expense,
+      &__add-grocery {
+        .import-item {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    &__grocessary-section,
+    &__expense-section {
+      .new-grocessary,
+      .new-expense {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+    }
+
+    &__expense-hints {
+      width: 100%;
+    }
+
+    &__grocery-category {
+      margin-top: 40px;
+    }
+
+    &__grocery-table {
+      margin-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,101 @@
+/************* Dashboard Page Start ***************/
+
+.dashboard-section {
+  margin: 30px 0 50px;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__border-left-primary {
+    border-left: 0.25rem solid #dfdfdf;
+
+    &.user-card {
+      border-left: 0.25rem solid #4e73df;
+
+      .badge {
+        background-color: #4e73df !important;
+      }
+
+      .card-icon {
+        background: url("../../images/user_image.png") no-repeat right center;
+        background-size: contain;
+      }
+    }
+
+    &.salary-card {
+      border-left: 0.25rem solid #0ea619;
+
+      .badge {
+        background-color: #0ea619 !important;
+      }
+
+      .card-icon {
+        background: url("../../images/salary_image.png") no-repeat right center;
+        background-size: contain;
+      }
+    }
+
+    &.expense-card {
+      border-left: 0.25rem solid #eb0a1f;
+
+      .badge {
+        background-color: #eb0a1f !important;
+      }
+
+      .card-icon {
+        background: url("../../images/expenses_image.png") no-repeat right
+          center;
+        background-size: contain;
+      }
+    }
+
+    &.reports-card {
+      border-left: 0.25rem solid #707d898a;
+
+      .dashboard-label {
+        &__dash,
+        &__values {
+          display: none;
+        }
+      }
+
+      .card-icon {
+        background: url("../../images/reports_image.png") no-repeat right center;
+        background-size: contain;
+      }
+    }
+  }
+
+  .no-gutters {
+    margin-left: 0;
+    margin-right: 0;
+
+    .col {
+      padding: 0;
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: initial;
+  }
+
+  &__card-content {
+    color: #5a5c69 !important;
+
+    span {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
+  &__icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/************* Dashboard Page End *****************/

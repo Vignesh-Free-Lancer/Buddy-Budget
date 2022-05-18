@@ -1,0 +1,187 @@
+.buddy-app-header {
+  background-color: #1abc9c !important;
+
+  &__title {
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 26px;
+    }
+  }
+
+  &__profile-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__profile-icon {
+    img {
+      border-radius: 50%;
+      width: 30px;
+      height: 35px;
+    }
+  }
+
+  &__user-menu {
+    padding-right: 15px;
+    position: relative;
+
+    &:after {
+      content: "";
+      border-right: 3px solid rgba(255, 255, 255, 0.55);
+      height: 30px;
+      position: absolute;
+      top: 13px;
+      right: 0;
+    }
+  }
+
+  &__language-menu {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &:before {
+      content: "";
+      background: url("../../images/global-language-icon.png") no-repeat;
+      width: 26px;
+      height: 26px;
+      background-size: 100% 100%;
+      display: inline-block;
+    }
+
+    a {
+      position: relative;
+      bottom: 2px;
+
+      &:focus {
+        color: #ffffff !important;
+      }
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      font-size: 20px;
+      color: #ffffff;
+      font-weight: 400;
+
+      &:hover {
+        font-weight: 500;
+      }
+    }
+  }
+
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+
+  .nav-item.dropdown {
+    .dropdown-menu {
+      padding: 0;
+
+      .dropdown-divider {
+        margin: 0;
+      }
+
+      .dropdown-item {
+        padding: 10px;
+
+        &:hover {
+          background-color: #1abc9c;
+          opacity: 0.7;
+          color: #ffffff;
+          font-size: 18px;
+          font-weight: 500;
+        }
+
+        &.active {
+          background-color: #1abc9c;
+          opacity: 0.7;
+          color: #ffffff;
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .buddy-app-header {
+    .navbar-toggler {
+      &.collapsed {
+        span {
+          background-image: url("../../images/humburger-menu-icon.png");
+        }
+      }
+
+      span {
+        background-image: url("../../images/humburger-menu-close-icon.png");
+      }
+    }
+
+    &__profile-menu {
+      justify-content: flex-start;
+    }
+
+    &__user-menu {
+      padding-left: 10px;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &__language-menu {
+      padding: 0;
+      justify-content: flex-start;
+
+      a {
+        padding: 15px !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .buddy-app-header {
+    .navbar-toggler {
+      &.collapsed {
+        span {
+          background-image: url("../../images/humburger-menu-icon.png");
+        }
+      }
+
+      span {
+        background-image: url("../../images/humburger-menu-close-icon.png");
+      }
+    }
+
+    &__profile-menu {
+      justify-content: flex-start;
+    }
+
+    &__user-menu {
+      padding-left: 10px;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &__language-menu {
+      padding: 0;
+      justify-content: flex-start;
+
+      a {
+        padding: 15px !important;
+      }
+    }
+  }
+}

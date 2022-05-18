@@ -1,0 +1,146 @@
+.r-toast-container {
+  margin: 0 0 5px;
+  padding: 5px 0;
+  z-index: 1100;
+  display: flex;
+  background: #fff;
+  width: 300px;
+  animation: fadein 200ms;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px 1px #ccc;
+  position: absolute;
+  right: 1%;
+  bottom: 15%;
+
+  &__icon {
+    padding: 14px 10px;
+
+    svg {
+      font-size: 22px;
+    }
+  }
+
+  &__toast-content {
+    color: #000000;
+    padding: 15px 10px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &.warning {
+    border: 1px solid #ffecb5;
+    background: #fff3cd;
+    // background: linear-gradient(to right, #fff, #ff8f39);
+
+    svg {
+      color: #664d03;
+    }
+
+    .r-toast-container__toast-content {
+      color: #664d03;
+    }
+  }
+
+  &.success {
+    border: 1px solid #badbcc;
+    background: #d1e7dd;
+    // background: linear-gradient(to right, #fff, #5aca75);
+
+    svg {
+      color: #0f5132;
+    }
+
+    .r-toast-container__toast-content {
+      color: #0f5132;
+    }
+  }
+
+  &.error {
+    border: 1px solid #f5c2c7;
+    background: #f8d7da;
+    // background: linear-gradient(to right, #fff, #f8d7da);
+
+    svg {
+      color: #842029;
+    }
+
+    .r-toast-container__toast-content {
+      color: #842029;
+    }
+  }
+
+  &.info {
+    border: 1px solid #b6effb;
+    background: #cff4fc;
+    // background: linear-gradient(to right, #fff, #5993ff);
+
+    svg {
+      color: #055160;
+    }
+
+    .r-toast-container__toast-content {
+      color: #055160;
+    }
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.custom-toast {
+  @mixin toast(
+    $position,
+    $zIndex,
+    $top,
+    $right,
+    $backgroundColor,
+    $color,
+    $width,
+    $opacity
+  ) {
+    position: $position;
+    z-index: $zIndex;
+    top: $top;
+    right: $right;
+    background-color: $backgroundColor;
+    color: $color;
+    width: $width;
+    opacity: $opacity;
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__content {
+    width: 80%;
+
+    > :nth-child(1) {
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+
+  &__close-icon {
+    width: 20%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color: #000000;
+    cursor: pointer;
+  }
+
+  .success-toast {
+    @include toast(absolute, 100, 10px, 0, #60bb71, #ffffff, 250px, 0.9);
+  }
+
+  .error-toast {
+    @include toast(absolute, 100, 10px, 0, red, #ffffff, 250px, 0.9);
+  }
+}

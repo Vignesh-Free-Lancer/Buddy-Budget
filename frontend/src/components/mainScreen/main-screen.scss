@@ -1,0 +1,88 @@
+/************* Main Screen Start ******************/
+
+.main-screen {
+  margin: 30px auto;
+
+  &__title-section {
+    h2 {
+      padding: 0 0 12px;
+      font-size: 26px;
+      font-weight: 600;
+      position: relative;
+
+      &:after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 100%;
+        background: linear-gradient(to right, lightblue, lightgreen);
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+  &__body-section {
+    input,
+    button {
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__feedback {
+    position: fixed;
+    bottom: 50%;
+    right: -3%;
+    transform: rotate(-90deg);
+
+    button {
+      padding: 5px 30px;
+      border-radius: 15px 15px 0 0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .main-screen {
+    &__feedback {
+      right: -6%;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .main-screen {
+    &__feedback {
+      right: -4.2%;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .main-screen {
+    &__feedback {
+      right: -2.4%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-screen {
+    &__feedback {
+      transform: rotate(0deg);
+      bottom: 7%;
+      right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  .main-screen {
+    &__feedback {
+      bottom: 13%;
+    }
+  }
+}
+/************* Main Screen End ********************/

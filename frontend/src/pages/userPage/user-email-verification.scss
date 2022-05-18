@@ -1,0 +1,143 @@
+.user-verify-email {
+  &__Content {
+    margin: 50px auto 0;
+    padding: 40px 0 30px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #666699;
+    border-radius: 20px;
+
+    h1 {
+      padding: 0 0 30px;
+      font-size: 52px;
+      font-weight: 600;
+      color: #ffffff;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 22px;
+      font-weight: 500;
+      color: #a1a4a9;
+      text-align: center;
+
+      span {
+        color: #ffffff;
+      }
+    }
+
+    button {
+      margin: 30px auto 0;
+      padding: 7px 30px 10px;
+      color: #ffffff;
+      background: transparent;
+      display: block;
+      border-radius: 30px;
+      border: 1px solid #ffffff;
+
+      &:hover {
+        color: #ffffff;
+        background: #b3b6ba;
+        border: 1px solid #666699;
+
+        span {
+          padding-right: 25px;
+
+          &:after {
+            opacity: 1;
+            right: -7px;
+            top: -14px;
+            font-size: 40px;
+          }
+        }
+      }
+
+      &:focus {
+        outline: none;
+        border: none;
+        box-shadow: none;
+      }
+
+      span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        font-size: 26px;
+        font-weight: 500;
+
+        &:after {
+          content: "\00bb";
+          position: absolute;
+          opacity: 0;
+          top: -14px;
+          right: -25px;
+          transition: 0.5s;
+          font-size: 40px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  &__success {
+    &__content {
+      margin: 50px auto 0;
+      padding: 40px 0 30px;
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #66725c;
+      border-radius: 20px;
+
+      h1 {
+        padding: 0 0 30px;
+        font-size: 52px;
+        font-weight: 600;
+        color: #ffffff;
+        letter-spacing: 1px;
+        text-align: center;
+      }
+
+      &__icon {
+        margin: 0 0 20px;
+        width: 100px;
+        height: 100px;
+        background-image: url("../../images/email-verified-icon.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+      }
+
+      p {
+        margin: 0 0 30px;
+        font-size: 22px;
+        font-weight: 500;
+        color: #ffffff;
+        text-align: center;
+      }
+
+      a {
+        padding: 4px 20px 6px;
+        font-size: 22px;
+        font-weight: 500;
+        color: #ffffff;
+        text-decoration: none;
+        background: transparent;
+        border: 1px solid #ffffff;
+        border-radius: 20px;
+
+        &:hover {
+          background: #75816b;
+          border: 1px solid #75816b;
+        }
+      }
+    }
+  }
+}

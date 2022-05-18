@@ -1,0 +1,35 @@
+/************* Login Page Start *******************/
+
+.login-section {
+  &__form {
+    width: 40%;
+    margin: 30px auto 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .login-section {
+    &__form {
+      width: 60%;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .login-section {
+    &__form {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .login-section {
+    &__form {
+      width: 100%;
+      margin: 30px 0 50px;
+    }
+  }
+}
+
+/************* Login Page End *********************/

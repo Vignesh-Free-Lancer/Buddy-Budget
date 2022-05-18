@@ -1,0 +1,119 @@
+.thanks {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-size: 42px;
+      font-weight: 700;
+      color: #00ffff;
+      text-align: center;
+    }
+
+    h4 {
+      font-size: 30px;
+      font-weight: 600;
+      color: #708090;
+      text-align: center;
+    }
+
+    h6 {
+      width: 40%;
+      margin: 0 auto;
+      font-size: 20px;
+      font-weight: 500;
+      color: #57647e;
+      text-align: center;
+    }
+
+    button {
+      margin: 0 auto;
+      padding: 10px 30px;
+      color: #000000;
+      background: #ffffff;
+      display: block;
+      border-radius: 30px;
+      border: 1px solid #2c3e50;
+
+      &:hover {
+        color: #ffffff;
+        background: #2c3e50;
+        border: 1px solid #ffffff;
+
+        span {
+          padding-right: 25px;
+
+          &:after {
+            opacity: 1;
+            right: -7px;
+            top: -14px;
+            font-size: 40px;
+          }
+        }
+      }
+
+      &:focus {
+        outline: none;
+        border: none;
+        box-shadow: none;
+      }
+
+      span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        font-size: 26px;
+        font-weight: 500;
+
+        &:after {
+          content: "\00bb";
+          position: absolute;
+          opacity: 0;
+          top: -14px;
+          right: -25px;
+          transition: 0.5s;
+          font-size: 40px;
+          color: #ffffff;
+        }
+      }
+    }
+
+    a {
+      display: inline-block;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .thanks {
+    &__content {
+      h6 {
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .thanks {
+    &__content {
+      h6 {
+        width: 52%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .thanks {
+    &__content {
+      h6 {
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+}

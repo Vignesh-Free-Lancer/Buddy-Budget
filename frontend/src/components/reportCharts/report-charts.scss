@@ -1,0 +1,60 @@
+.report-charts {
+  margin: 30px 0 0;
+  padding: 0 0 40px;
+  text-align: right;
+
+  &__icon-group {
+    margin: 0 0 30px;
+
+    button {
+      padding: 5px 7px;
+      background: none;
+      border: 1px solid #dee2e6;
+      position: relative;
+      text-align: right;
+
+      &:hover {
+        background: none;
+        border: 1px solid #dee2e6;
+      }
+    }
+  }
+
+  &__bar-chart {
+    background: red;
+    &__icon {
+      &:before {
+        content: "";
+        display: block;
+        background: url("../../images/bar-chat-icon.png") no-repeat;
+        background-size: cover;
+        width: 40px;
+        height: 38px;
+      }
+    }
+  }
+
+  &__doughnut-chart {
+    &__icon {
+      &:before {
+        content: "";
+        display: block;
+        background: url("../../images/doughnut-chart-icon.jpg") no-repeat;
+        background-size: cover;
+        width: 40px;
+        height: 38px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .report-charts {
+    margin: 10px 0 0;
+    text-align: left;
+
+    &__icon-group {
+      margin: 0 0 20px;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "housebudget",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm start\" \"npm run client\""
+  },
+  "author": "Vignesh R",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^7.0.0",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.1.1",
+    "cryptr": "^6.0.2",
+    "date-fns": "^2.28.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "express-async-handler": "^1.2.0",
+    "express-session": "^1.17.2",
+    "hbs": "^4.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "mongoose": "^6.2.1",
+    "multer": "^1.4.4",
+    "nodemailer": "^6.7.5",
+    "nodemon": "^2.0.15",
+    "react-csv": "^2.2.2",
+    "react-moment": "^1.1.1"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-remove-console": "^6.9.4"
+  }
+}

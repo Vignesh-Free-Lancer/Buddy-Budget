@@ -1,0 +1,70 @@
+.salary-info {
+  &__section {
+    margin: 30px 0;
+    position: relative;
+
+    &-salary-hints {
+      margin: 0 0 5px;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: initial;
+      color: #d8d8d8;
+
+      span {
+        font-size: 12px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__sub-title {
+    padding-bottom: 10px;
+    font-size: 16px;
+    position: relative;
+
+    &:after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 11.3%;
+      background: linear-gradient(
+        to right,
+        rgb(159, 182, 190),
+        rgb(124, 123, 180)
+      );
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  &__total-value {
+    label,
+    span {
+      font-weight: 500;
+    }
+
+    &.total-cr {
+      span {
+        padding: 0;
+        color: green;
+        float: right;
+      }
+    }
+
+    &.total-dr {
+      span {
+        padding: 0;
+        color: #dc3545;
+        float: right;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .salary-info {
+    &__section {
+      padding: 0 0 20px;
+    }
+  }
+}
