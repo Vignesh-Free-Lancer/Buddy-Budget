@@ -140,4 +140,54 @@
       }
     }
   }
+
+  &__error {
+    &__content {
+      margin: 50px auto 0;
+      padding: 40px 0 30px;
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #6c757d;
+      border-radius: 20px;
+
+      h1 {
+        padding: 0 0 30px;
+        font-size: 52px;
+        font-weight: 600;
+        color: #ffffff;
+        letter-spacing: 1px;
+        text-align: center;
+      }
+
+      p {
+        margin: 0 0 30px;
+        font-size: 22px;
+        font-weight: 400;
+        color: #ffffff;
+        text-align: center;
+      }
+
+      h3 {
+        padding: 0 0 30px;
+        font-size: 30px;
+        font-weight: 500;
+        color: #0dcaf0;
+        letter-spacing: 1px;
+        text-align: center;
+      }
+
+      &__icon {
+        margin: 0 0 20px;
+        width: 100px;
+        height: 100px;
+        background-image: url("../../images/email-verified-failed-icon.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+      }
+    }
+  }
 }

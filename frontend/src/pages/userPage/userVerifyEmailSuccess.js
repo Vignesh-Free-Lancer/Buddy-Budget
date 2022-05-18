@@ -39,22 +39,41 @@ const UserVerifyEmailSuccess = () => {
   return (
     <>
       {loading && <Loading />}
-      <div className="user-verify-email__success">
-        <div className="container">
-          <Row>
-            <Col>
-              <div className="user-verify-email__success__content">
-                <h1>Email has been verified</h1>
-                <div className="user-verify-email__success__content__icon"></div>
-                <p>You can now log in</p>
-                <div>
-                  <Link to="/login">Login</Link>
+      {!error && (
+        <div className="user-verify-email__success">
+          <div className="container">
+            <Row>
+              <Col>
+                <div className="user-verify-email__success__content">
+                  <h1>Email has been verified</h1>
+                  <div className="user-verify-email__success__content__icon"></div>
+                  <p>You can now log in</p>
+                  <div>
+                    <Link to="/login">Login</Link>
+                  </div>
                 </div>
-              </div>
-            </Col>
-          </Row>
+              </Col>
+            </Row>
+          </div>
         </div>
-      </div>
+      )}
+      {error && (
+        <div className="user-verify-email__error">
+          {" "}
+          <div className="container">
+            <Row>
+              <Col>
+                <div className="user-verify-email__error__content">
+                  <h1>Your accout has been already activated</h1>
+                  <p>(Or)</p>
+                  <h3>If not activated, Please try after some time!</h3>
+                  <div className="user-verify-email__error__content__icon"></div>
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </div>
+      )}
     </>
   );
 };

@@ -133,7 +133,9 @@ const userEmailConfirmation = asyncHandler(async (req, res) => {
     });
   } else {
     res.status(404);
-    throw new Error("Sorry, unable to activate your account.");
+    throw new Error(
+      "Your account already activated (Or) Some technical issues, Please try again!"
+    );
   }
 });
 
