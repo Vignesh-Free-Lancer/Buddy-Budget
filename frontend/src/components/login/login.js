@@ -90,9 +90,6 @@ const Login = () => {
 
   return (
     <>
-      {/* {error && (
-        <CustomToastComponent appearance="error">{error}</CustomToastComponent>
-      )} */}
       <Form className="login-section__form" onSubmit={handleLogin}>
         {loading && <Loading />}
         <InputFormGroup inputLabel={translation.EmailAddress} inputName="email">

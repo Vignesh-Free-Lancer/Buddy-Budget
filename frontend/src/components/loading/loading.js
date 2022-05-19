@@ -8,8 +8,15 @@ const Loading = ({ size = 50 }) => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        width: "100%",
-        height: "100%",
+        // width: "100%",
+        // height: "100%",
+        position: "fixed",
+        top: "50%",
+        left: "50%",
+        width: "30em",
+        height: "18em",
+        marginTop: "-9em",
+        marginLeft: "-15em",
       }}
     >
       <Spinner

@@ -51,6 +51,8 @@ const FeedbackThanksPage = lazy(() =>
   import("./pages/feedbackPage/feedbackThanksPage")
 );
 
+const NotFound = lazy(() => import("./components/notFound/notFound"));
+
 const App = () => {
   /* Redirect To Landing Page When close Or Reload The Page --- Start */
   window.addEventListener("beforeunload", () => {
@@ -191,6 +193,8 @@ const App = () => {
               </PrivateRoute>
             }
           />
+
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </BrowserRouter>

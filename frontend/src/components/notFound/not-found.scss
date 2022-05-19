@@ -1,0 +1,19 @@
+.not-found-section {
+  background: #f5f6f8;
+
+  &__content {
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+  }
+
+  &__icon {
+    margin: 0 auto 20px;
+    width: 100px;
+    height: 100px;
+    background-image: url("../../images/not-found-icon.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+  }
+}

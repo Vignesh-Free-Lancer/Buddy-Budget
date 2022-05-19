@@ -209,10 +209,6 @@ const Registration = () => {
   return (
     <div className="registration-section">
       {loading && <Loading />}
-      {/* {error && (
-        <CustomToastComponent appearance="error">{error}</CustomToastComponent>
-      )} */}
-
       <Row>
         <Col xl={9} lg={9} md={8} sm={12} xs={12}>
           <Form
