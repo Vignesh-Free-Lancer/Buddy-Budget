@@ -35,7 +35,7 @@ const sendConfirmationEmail = (
           <p><a href="http://${
             process.env.NODE_ENV === "development"
               ? process.env.DOMAIN
-              : "localhost:3000"
+              : "127.0.0.1:3000"
           }/user/email-account/activate/${userEmailToken}">Click here - To activate your Email</a></p>
           <P style="margin-top:30px;">Regards,</p>
           <p>Support Team</p>`,
