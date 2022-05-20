@@ -32,7 +32,7 @@ const hiLang = {
   DefaultImage: "डिफ़ॉल्ट छवि",
   UploadNew: "नया अपलोड करें",
   PleaseWaitImageUploading: "कृपया प्रतीक्षा करें, छवि अपलोड हो रही है...",
-  ImageUploadedSuccessfully: "छवि सफलतापूर्वक अपलोड की गई!",
+  ImageUploadedSuccessfully: "छवि सफलतापूर्वक अपलोड की गई",
   ServerErrorImageUpload:
     "सर्वर त्रुटि! पुन: प्रयास करें या किसी अन्य समय प्रयास करें.",
   PleaseSelectAnImage: "कृपया एक छवि चुनें",

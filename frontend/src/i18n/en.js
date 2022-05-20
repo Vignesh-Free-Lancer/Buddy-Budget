@@ -32,7 +32,7 @@ const enLang = {
   DefaultImage: "Default Image",
   UploadNew: "Upload New",
   PleaseWaitImageUploading: "Please wait, Image is uploading...",
-  ImageUploadedSuccessfully: "Image uploaded successfully!",
+  ImageUploadedSuccessfully: "Image uploaded successfully",
   ServerErrorImageUpload: "Server Error! Try again or try some other time.",
   PleaseSelectAnImage: "Please select an image",
   PleaseUploadProfilePicture: "Please upload a profile picture",

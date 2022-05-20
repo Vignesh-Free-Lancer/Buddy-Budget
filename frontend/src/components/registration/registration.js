@@ -206,6 +206,8 @@ const Registration = () => {
     };
   }, [userDetails, error, addToast]);
 
+  console.log("Status", uploadStatus === translation.ImageUploadedSuccessfully);
+
   return (
     <div className="registration-section">
       {loading && <Loading />}
@@ -363,7 +365,7 @@ const Registration = () => {
                 className="mt-3 registration-section__profile-image-status"
                 style={{
                   display:
-                    uploadStatus === "Image uploaded successfully"
+                    uploadStatus === translation.ImageUploadedSuccessfully
                       ? "none"
                       : "block",
                 }}
