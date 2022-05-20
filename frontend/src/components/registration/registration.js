@@ -206,8 +206,6 @@ const Registration = () => {
     };
   }, [userDetails, error, addToast]);
 
-  console.log("Status", uploadStatus === translation.ImageUploadedSuccessfully);
-
   return (
     <div className="registration-section">
       {loading && <Loading />}

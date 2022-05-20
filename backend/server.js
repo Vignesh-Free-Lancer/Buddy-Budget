@@ -31,6 +31,7 @@ app.use("/", feedbackRoutes); // Use feedback routes for api call
 
 __dirname = path.resolve();
 if (process.env.NODE_ENV === "production") {
+  console.log("Now Prod");
   // Below line let join the current path to the path of build folder
   app.use(express.static(path.join(__dirname, "/frontend/build")));
 
@@ -39,6 +40,7 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html")); // i.e /frontend/build/index.html
   });
 } else {
+  console.log("Now Dev");
   app.get("/", (req, res) => {
     res.send("API is running...");
   });

@@ -54,6 +54,7 @@ const FeedbackThanksPage = lazy(() =>
 const NotFound = lazy(() => import("./components/notFound/notFound"));
 
 const App = () => {
+  console.log("Buddy Budget");
   /* Redirect To Landing Page When close Or Reload The Page --- Start */
   window.addEventListener("beforeunload", () => {
     localStorage.removeItem("userInfos");
