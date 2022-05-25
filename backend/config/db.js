@@ -15,9 +15,20 @@ const connectDB = async () => {
     //   useUnifiedTopology: true,
     // });
 
-    const conn = await mongoose.connect(url);
+    // const conn = await mongoose.connect(url);
 
-    console.log(`MongoDB: ${conn.connection.host}`);
+    mongoose.connect(
+      "mongodb+srv://silentkiller:Vishagan13@cluster0.fnyrs.mongodb.net/?retryWrites=true&w=majority",
+      { useNewUrlParser: true }
+    );
+    mongoose.connection
+      .once("open", function () {
+        console.log("Conection has been made!");
+      })
+      .on("error", function (error) {
+        console.log("Error is: ", error);
+      });
+    // console.log(`MongoDB: ${conn.connection.host}`);
   } catch (e) {
     console.log("Error", e);
   }
