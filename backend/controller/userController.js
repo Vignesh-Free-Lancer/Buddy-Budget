@@ -142,9 +142,8 @@ const userEmailConfirmation = asyncHandler(async (req, res) => {
 // Check User Login Status
 const loginUser = asyncHandler(async (req, res) => {
   const { email, password } = req.body;
-  const user = await User.findOne({
-    email: email.toLowerCase(),
-  });
+
+  const user = await User.find({ email: email.toLowerCase() });
 
   if (user && (await user.matchPassword(password))) {
     if (!user.isEmailVerified && user.emailToken !== null && !user.isActive) {
