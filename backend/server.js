@@ -5,17 +5,7 @@ const connectDB = require("./config/db");
 const path = require("path");
 
 dotenv.config();
-// connectDB();
-const connectToMongo = async () => {
-  await mongoose.connect(process.env.MONGODB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-  });
-  return mongoose;
-};
-
-await connectToMongo().then(async () => console.log("connected yeee"));
+connectDB();
 
 // Import Routers
 const userRoutes = require("./routes/userRoutes");
