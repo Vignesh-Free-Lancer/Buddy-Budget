@@ -13,15 +13,11 @@ const connectDB = async () => {
     //   useNewUrlParser: true,
     //   useUnifiedTopology: true,
     // });
-    // const conn = await mongoose.connect(process.env.MONGODB_URI);
+    const conn = await mongoose.connect(process.env.MONGODB_URI);
 
-    mongoose.connect(process.env.MONGODB_URI).then(() => {
-      console.log("...");
-    });
-
-    // console.log(`MongoDB: ${conn.connection.host}`);
+    console.log(`MongoDB: ${conn.connection.host}`);
   } catch (e) {
-    console.error(e);
+    console.log("Error", e);
   }
 };
 
