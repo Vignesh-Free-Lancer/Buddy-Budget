@@ -350,7 +350,6 @@ const Expenses = () => {
       //     expenseData.description
       //   )
       // );
-      console.log("Expense", expenseData);
     } else {
       dispatch(
         updateExpenseDataById(
@@ -766,7 +765,6 @@ const Expenses = () => {
           groceryData.totalPrice
         )
       );
-      console.log("Data", groceryData);
     } else {
       dispatch(
         updateGroceryItemById(

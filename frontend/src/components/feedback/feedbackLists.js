@@ -5,10 +5,7 @@ import { getFeedbackListsAction } from "../../redux/actions/feedbackActions";
 
 const FeedbackLists = () => {
   const dispatch = useDispatch();
-  const { feedbackLists, loading } = useSelector(
-    (state) => state.feedbackLists
-  );
-  console.log("List ", loading, feedbackLists);
+  const { feedbackLists } = useSelector((state) => state.feedbackLists);
 
   useEffect(() => {
     dispatch(getFeedbackListsAction());

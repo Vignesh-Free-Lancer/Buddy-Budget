@@ -133,8 +133,6 @@ const ForgotPassword = () => {
     setUserErrors(errors || {});
     if (errors) return;
 
-    console.log("Forgot", userCredential);
-
     dispatch(
       userForgotPasswordAction(userCredential.email, userCredential.newPassword)
     );

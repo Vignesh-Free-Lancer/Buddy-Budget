@@ -10,8 +10,6 @@ import "./App.css";
 // import "./house-budget.css";
 import "./buddy-budget.scss";
 
-// import CustomToastComponent from "./components/toast/customToastComponent";
-
 const Header = lazy(() => import("./components/header/header"));
 const Footer = lazy(() => import("./components/footer/footer"));
 
@@ -54,7 +52,6 @@ const FeedbackThanksPage = lazy(() =>
 const NotFound = lazy(() => import("./components/notFound/notFound"));
 
 const App = () => {
-  console.log("Buddy Budget");
   /* Redirect To Landing Page When close Or Reload The Page --- Start */
   window.addEventListener("beforeunload", () => {
     localStorage.removeItem("userInfos");
@@ -204,7 +201,3 @@ const App = () => {
 };
 
 export default App;
-
-// const MyCustomToast = (props) => {
-//   return <CustomToastComponent {...props}></CustomToastComponent>;
-// };

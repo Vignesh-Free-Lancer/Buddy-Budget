@@ -196,7 +196,6 @@ const updateUserPassword = asyncHandler(async (req, res) => {
 // Forgot User Password
 const userForgotPassword = asyncHandler(async (req, res) => {
   const { newPassword } = req.body;
-  console.log("User Controller", req.params, req.body);
   const user = await User.findOne(
     {
       email: req.params.userEmail,
