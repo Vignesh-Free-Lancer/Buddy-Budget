@@ -9,10 +9,11 @@ const connectDB = async () => {
     // });
 
     // Here URI mentioned mongodb cluster
-    const conn = await mongoose.connect(process.env.MONGODB_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    // const conn = await mongoose.connect(process.env.MONGODB_URI, {
+    //   useNewUrlParser: true,
+    //   useUnifiedTopology: true,
+    // });
+    const conn = await mongoose.connect(process.env.MONGODB_URI);
 
     console.log(`MongoDB: ${conn.connection.host}`);
   } catch (e) {
