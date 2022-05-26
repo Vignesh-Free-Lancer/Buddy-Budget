@@ -41,6 +41,7 @@ const FormNavigation = ({
           <Button
             variant="secondary"
             className="me-1"
+            disabled
             title={translation.Previous}
             style={{
               display:
@@ -58,6 +59,7 @@ const FormNavigation = ({
           <Button
             variant="secondary"
             className="me-1"
+            disabled
             title={translation.Next}
             style={{
               display:
