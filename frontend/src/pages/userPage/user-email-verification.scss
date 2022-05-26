@@ -1,4 +1,6 @@
 .user-verify-email {
+  min-height: 85vh;
+
   &__Content {
     margin: 50px auto 0;
     padding: 40px 0 30px;
@@ -85,6 +87,8 @@
   }
 
   &__success {
+    min-height: 85vh;
+
     &__content {
       margin: 50px auto 0;
       padding: 40px 0 30px;

@@ -36,6 +36,7 @@ const enLang = {
   ServerErrorImageUpload: "Server Error! Try again or try some other time.",
   PleaseSelectAnImage: "Please select an image",
   PleaseUploadProfilePicture: "Please upload a profile picture",
+  AreYouSureYouWantDeleteUser: "Are you sure you want to delete user",
   DoYouWantTo: "Do you want to",
   Update: "Update",
   Delete: "Delete",

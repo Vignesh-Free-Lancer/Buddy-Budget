@@ -37,6 +37,7 @@ const hiLang = {
     "सर्वर त्रुटि! पुन: प्रयास करें या किसी अन्य समय प्रयास करें.",
   PleaseSelectAnImage: "कृपया एक छवि चुनें",
   PleaseUploadProfilePicture: "कृपया एक प्रोफ़ाइल चित्र अपलोड करें",
+  AreYouSureYouWantDeleteUser: "क्या आप वाकई उपयोगकर्ता को हटाना चाहते हैं",
   DoYouWantTo: "क्या आप करना यह चाहते हैं",
   Update: "अपडेट करना",
   Delete: "मिटाना",
