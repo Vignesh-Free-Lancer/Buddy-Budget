@@ -18,7 +18,7 @@ const connectDB = async () => {
     // const conn = await mongoose.connect(url);
 
     mongoose.connect(
-      "mongodb+srv://silentkiller:Vishagan13@cluster0.fnyrs.mongodb.net/?retryWrites=true&w=majority",
+      `mongodb+srv://${process.env.MONGODB_AUTH_USERNAME}:${process.env.MONGODB_AUTH_PASSWORD}@cluster0.fnyrs.mongodb.net/?retryWrites=true&w=majority`,
       { useNewUrlParser: true }
     );
     mongoose.connection
