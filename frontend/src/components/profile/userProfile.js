@@ -431,7 +431,7 @@ const Profile = () => {
         showModal={openModal}
         closeModal={closeModalWindow}
         confirmDelete={confirmedDelete}
-        confirmMessage={`Are you sure you want to delete user -`}
+        confirmMessage={`${translation.AreYouSureYouWantDeleteUser} -`}
         confirmMessageValue={`${userInfos && userInfos.userName}`}
       />
     </>
