@@ -15,6 +15,12 @@ const Header = () => {
   const { language, changeLanguage } = useLanguageContext();
 
   const { userInfos } = useSelector((state) => state.userLogin);
+  const { updateUser } = useSelector((state) => state.userUpdate);
+
+  if (updateUser) {
+    userInfos.userName = updateUser.updatedUser.userName;
+    userInfos.pic = updateUser.updatedUser.pic;
+  }
 
   const [selectedLang, setSelectedLang] = useState("En");
 

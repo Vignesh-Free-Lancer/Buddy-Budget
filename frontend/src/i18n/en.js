@@ -192,6 +192,11 @@ const enLang = {
   YourAccoutHasBeenAlreadyActivated: "Your account has been already activated",
   IfNotActivatedPleaseTrySomeTime:
     "If not activated, Please try after some time",
+  ThanksForYourSupport: "Thanks for your support, in utilizing our site",
+  WeHopeYouGaveFeedback: "We hope, you gave your feedback to improve our site",
+  InFeatureReferOurSite:
+    "In Feature, refer our site to your colleagues or contacts within your industry",
+  WelcomeBackAgain: "Welcome back again",
 };
 
 export default enLang;

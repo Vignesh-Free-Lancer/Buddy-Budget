@@ -195,6 +195,13 @@ const hiLang = {
   YourAccoutHasBeenAlreadyActivated: "आपका खाता पहले ही सक्रिय हो चुका है",
   IfNotActivatedPleaseTrySomeTime:
     "यदि सक्रिय नहीं है, तो कृपया कुछ समय बाद प्रयास करें",
+  ThanksForYourSupport:
+    "हमारी साइट का उपयोग करने में, आपके समर्थन के लिए धन्यवाद",
+  WeHopeYouGaveFeedback:
+    "हमें उम्मीद है, आपने हमारी साइट को बेहतर बनाने के लिए अपनी प्रतिक्रिया दी",
+  InFeatureReferOurSite:
+    "फ़ीचर में, हमारी साइट को अपने सहयोगियों या अपने उद्योग के संपर्कों को देखें",
+  WelcomeBackAgain: "फिर से स्वागत",
 };
 
 export default hiLang;
