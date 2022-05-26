@@ -1,10 +1,10 @@
 import React, { lazy, useEffect } from "react";
 import { Col, Row } from "react-bootstrap";
+import "./user-email-verification.scss";
 import { useToasts } from "react-toast-notifications";
+import useTranslation from "../../hooks/translation";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
-import "./user-email-verification.scss";
-
 import { userEmailAccountActivate } from "../../redux/actions/userActions";
 
 const Loading = lazy(() => import("../../components/loading/loading"));
@@ -13,6 +13,8 @@ const UserVerifyEmailSuccess = () => {
   const { token } = useParams();
 
   const dispatch = useDispatch();
+
+  const translation = useTranslation();
 
   useEffect(() => {
     const activateUserAccount = () => {
@@ -45,11 +47,11 @@ const UserVerifyEmailSuccess = () => {
             <Row>
               <Col>
                 <div className="user-verify-email__success__content">
-                  <h1>Email has been verified</h1>
+                  <h1>{translation.EmailHasBeenVerified}</h1>
                   <div className="user-verify-email__success__content__icon"></div>
-                  <p>You can now log in</p>
+                  <p>{translation.YouCanNowLogIn}</p>
                   <div>
-                    <Link to="/login">Login</Link>
+                    <Link to="/login">{translation.Login}</Link>
                   </div>
                 </div>
               </Col>
@@ -64,9 +66,9 @@ const UserVerifyEmailSuccess = () => {
             <Row>
               <Col>
                 <div className="user-verify-email__error__content">
-                  <h1>Your accout has been already activated</h1>
-                  <p>(Or)</p>
-                  <h3>If not activated, Please try after some time!</h3>
+                  <h1>{translation.YourAccoutHasBeenAlreadyActivated}</h1>
+                  <p>( {translation.Or} )</p>
+                  <h3>{translation.IfNotActivatedPleaseTrySomeTime}!</h3>
                   <div className="user-verify-email__error__content__icon"></div>
                 </div>
               </Col>

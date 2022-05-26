@@ -184,6 +184,17 @@ const hiLang = {
   InvalidCredentials: "अवैध प्रत्यय पत्र!",
   PleaseEnterEmail: "कृपया ईमेल दर्ज करें",
   PleaseEnterPassword: "कृप्या पास्वर्ड भरो",
+  AccountConfirmation: "खाता पुष्टि",
+  AnEmailLinkHasBeenSent:
+    "आपके खाते की पुष्टि लिंक वाला एक ईमेल आपके ईमेल पर भेज दिया गया है",
+  CheckYourEmailAndProceed:
+    "अपना ईमेल जांचें और आगे बढ़ने के लिए यहां वापस आएं",
+  Proceed: "आगे बढ़ना",
+  EmailHasBeenVerified: "एक ईमेल सत्यापित किया गया है",
+  YouCanNowLogIn: "अब आप लॉग इन कर सकते हैं",
+  YourAccoutHasBeenAlreadyActivated: "आपका खाता पहले ही सक्रिय हो चुका है",
+  IfNotActivatedPleaseTrySomeTime:
+    "यदि सक्रिय नहीं है, तो कृपया कुछ समय बाद प्रयास करें",
 };
 
 export default hiLang;

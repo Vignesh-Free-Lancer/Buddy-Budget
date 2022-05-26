@@ -182,6 +182,16 @@ const enLang = {
   GroceryAmount: "Grocery Amount",
   PleaseEnterEmail: "Please enter email",
   PleaseEnterPassword: "Please enter password",
+  AccountConfirmation: "Account Confirmation",
+  AnEmailLinkHasBeenSent:
+    "An email with your account confirmation link has been sent to your email",
+  CheckYourEmailAndProceed: "Check your email and come back here to proceed",
+  Proceed: "Proceed",
+  EmailHasBeenVerified: "An email has been verified",
+  YouCanNowLogIn: "You can now log in",
+  YourAccoutHasBeenAlreadyActivated: "Your account has been already activated",
+  IfNotActivatedPleaseTrySomeTime:
+    "If not activated, Please try after some time",
 };
 
 export default enLang;

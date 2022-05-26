@@ -97,7 +97,7 @@ const Header = () => {
                   selectedLang === "en"
                     ? "En"
                     : selectedLang === "hi"
-                    ? "Hi"
+                    ? "नमस्ते"
                     : "En"
                 }
                 id="navbarLangScrollingDropdown"
