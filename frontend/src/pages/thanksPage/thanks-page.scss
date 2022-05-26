@@ -1,4 +1,8 @@
 .thanks {
+  &__section {
+    min-height: 85vh;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;

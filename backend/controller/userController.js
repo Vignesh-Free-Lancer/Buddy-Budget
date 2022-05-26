@@ -51,6 +51,13 @@ const addUser = asyncHandler(async (req, res) => {
     throw new Error("Email already exists");
   }
 
+  if (userExists.length > 0 && !userExists.isActive) {
+    res.status(400);
+    throw new Error(
+      "Email exists, Register with new email to access our site or else send mail to our support team to activate your account."
+    );
+  }
+
   //If User Not Exists, Create New User
   const user = await User.create({
     userName,
@@ -154,7 +161,7 @@ const loginUser = asyncHandler(async (req, res) => {
     } else if (user.isEmailVerified && !user.isActive) {
       res.status(404);
       throw new Error(
-        "Your account is deactivated. Register again to access our site."
+        "Your account is deactivated. Register again with new email to access our site or else send mail to our support team to activate your account."
       );
     } else {
       res.status(201).json({

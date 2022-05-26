@@ -199,7 +199,7 @@ const Registration = () => {
   const { addToast } = useToasts();
   useEffect(() => {
     if (error)
-      addToast(error, { appearance: "error", autoDismissTimeout: "5000" });
+      addToast(error, { appearance: "error", autoDismissTimeout: "6000" });
 
     return () => {
       delete userDetails.error;

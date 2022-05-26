@@ -81,7 +81,8 @@ const Login = () => {
 
   const { addToast } = useToasts();
   useEffect(() => {
-    if (error) addToast(error, { appearance: "error" });
+    if (error)
+      addToast(error, { appearance: "error", autoDismissTimeout: "6000" });
 
     return () => {
       delete userDetails.error;
