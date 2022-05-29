@@ -195,3 +195,17 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .user-verify-email {
+    &__Content,
+    &__success {
+      margin: 50px auto;
+      width: 100%;
+
+      h1 {
+        font-size: 40px;
+      }
+    }
+  }
+}
