@@ -20,6 +20,13 @@ const sendConfirmationEmail = (
       },
     });
 
+    const mailerLinkHost =
+      process.env.NODE_ENV === "production"
+        ? "https://buddy-budget.herokuapp.com"
+        : process.env.NODE_ENV === "development"
+        ? `http://${process.env.DOMAIN}`
+        : "http://127.0.0.1:5000";
+
     // Send Verification Mail Content Creator
     const mailOptions = {
       from: '"Verify Your Mail" <developer.vicky@gmail.com>',
@@ -32,13 +39,7 @@ const sendConfirmationEmail = (
       html: `<h2>Hi ${userName},</h2>
           <h3>Thanks for registering on our site.</h3>
           <h4>Pleaser verify your email to access your account.</h4>
-          <p><a href="http://${
-            process.env.NODE_ENV === "development"
-              ? process.env.DOMAIN
-              : process.env.NODE_ENV === "production"
-              ? "https://buddy-budget.herokuapp.com/"
-              : "127.0.0.1:5000"
-          }/user/email-account/activate/${userEmailToken}">Click here - To activate your Email</a></p>
+          <p><a href="${mailerLinkHost}/user/email-account/activate/${userEmailToken}">Click here - To activate your Email</a></p>
           <P style="margin-top:30px;">Regards,</p>
           <p>Support Team</p>`,
     };
