@@ -336,20 +336,20 @@ const Expenses = () => {
     if (errors) return;
 
     if (customExpenseId === "" || customExpenseId === undefined) {
-      // dispatch(
-      //   addExpenseDetailAction(
-      //     selectedMonth,
-      //     selectedYear,
-      //     expenseData.particular,
-      //     selectedParticularType,
-      //     expenseData.estimatedCost,
-      //     expenseData.actualCost,
-      //     selectedPaymentType,
-      //     expenseData.paymentBank,
-      //     paymentDate,
-      //     expenseData.description
-      //   )
-      // );
+      dispatch(
+        addExpenseDetailAction(
+          selectedMonth,
+          selectedYear,
+          expenseData.particular,
+          selectedParticularType,
+          expenseData.estimatedCost,
+          expenseData.actualCost,
+          selectedPaymentType,
+          expenseData.paymentBank,
+          paymentDate,
+          expenseData.description
+        )
+      );
     } else {
       dispatch(
         updateExpenseDataById(
@@ -524,14 +524,35 @@ const Expenses = () => {
     addToast,
   ]);
 
-  const importExpenseData = () => {
-    const importExpenseLists = (month, year) => {
-      dispatch(getExpenseListsAction("new", month, year));
-    };
+  const importExpenseData = (e) => {
+    // const importExpenseLists = (month, year) => {
+    //   dispatch(getExpenseListsAction("new", month, year));
+    // };
+    // if (selectedMonth !== "select" && selectedYear !== "select") {
+    //   importExpenseLists(selectedMonth, selectedYear);
+    // }
 
-    if (selectedMonth !== "select" && selectedYear !== "select") {
-      importExpenseLists(selectedMonth, selectedYear);
+    e.preventDefault();
+
+    const errors = validateRange();
+    setExpenseErrors(errors || {});
+    if (errors) {
+      addToast(
+        selectedMonth === "select" && selectedYear === "select"
+          ? "Please select month & year"
+          : selectedMonth === "select"
+          ? "Please select month"
+          : selectedYear === "select"
+          ? "Please select year"
+          : "",
+        {
+          appearance: "error",
+        }
+      );
+      return;
     }
+
+    dispatch(getExpenseListsAction("new", selectedMonth, selectedYear));
   };
 
   // Get Expense List Based On Array Dependencies
@@ -941,14 +962,36 @@ const Expenses = () => {
     addToast,
   ]);
 
-  const importGroceriesData = () => {
-    const importGroceryLists = (month, year) => {
-      dispatch(getGroceryItemListsAction("new", month, year));
-    };
+  const importGroceriesData = (e) => {
+    // const importGroceryLists = (month, year) => {
+    //   dispatch(getGroceryItemListsAction("new", month, year));
+    // };
 
-    if (selectedMonth !== "select" && selectedYear !== "select") {
-      importGroceryLists(selectedMonth, selectedYear);
+    // if (selectedMonth !== "select" && selectedYear !== "select") {
+    //   importGroceryLists(selectedMonth, selectedYear);
+    // }
+
+    e.preventDefault();
+
+    const errors = validateRange();
+    setExpenseErrors(errors || {});
+    if (errors) {
+      addToast(
+        selectedMonth === "select" && selectedYear === "select"
+          ? "Please select month & year"
+          : selectedMonth === "select"
+          ? "Please select month"
+          : selectedYear === "select"
+          ? "Please select year"
+          : "",
+        {
+          appearance: "error",
+        }
+      );
+      return;
     }
+
+    dispatch(getGroceryItemListsAction("new", selectedMonth, selectedYear));
   };
 
   // Get Grocery List Based On Array Dependencies
