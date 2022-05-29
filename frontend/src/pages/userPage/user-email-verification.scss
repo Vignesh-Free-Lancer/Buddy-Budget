@@ -199,7 +199,8 @@
 @media screen and (max-width: 767px) {
   .user-verify-email {
     &__Content,
-    &__success {
+    &__success,
+    &__error {
       margin: 50px auto;
       width: 100%;
 
