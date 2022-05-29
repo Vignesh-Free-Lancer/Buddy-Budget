@@ -198,14 +198,34 @@
 
 @media screen and (max-width: 767px) {
   .user-verify-email {
-    &__Content,
-    &__success,
-    &__error {
+    &__Content {
       margin: 50px auto;
       width: 100%;
 
       h1 {
         font-size: 40px;
+      }
+    }
+
+    &__success {
+      &__content {
+        margin: 50px auto;
+        width: 100%;
+
+        h1 {
+          font-size: 40px;
+        }
+      }
+    }
+
+    &__error {
+      &__content {
+        margin: 50px auto;
+        width: 100%;
+
+        h1 {
+          font-size: 40px;
+        }
       }
     }
   }
